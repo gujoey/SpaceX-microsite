@@ -1,0 +1,113 @@
+body{
+	background-color: #000000;
+}
+
+
+/*----navbar----*/
+.navbar{
+	background-color: transparent !important;
+	color: black;
+}
+
+.navbar-toggler{
+	border-style: none;
+}
+
+.navbar-toggler:focus,.navbar-toggler:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+ul.navbar-nav{
+	margin: 1.5em 0 0 0.6em;
+}
+
+a.nav-link{
+	background-color: #1CA2F7;
+	border-radius: 10px;
+	width: 150px;
+	margin: 0.2em;
+	text-align: center; 
+}
+
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #1CA2F7;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px; 
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+
+/*----sections----*/
+.section{
+	text-align: center;
+	color: white;
+}
+
+/*
+.img-section-1{
+	background-image: url(../images/spaceman.jpg);
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+.bg-color{
+	background-color: rgba(0,0,0,0.6);
+	height: 100%;
+}*/
+
+
+
+
+/*----font-colors----*/
+.font-color{
+	color: #1CA2F7;
+}
+
+
+
+/*----container----*/
+.container-small{
+	width: 70%;
+	margin: auto;
+}
+
+
+/*----borders----*/
+.border{
+	border: 2px solid blue;
+	height: 100px;
+	padding: 2em;
+}
+
+
+
+
