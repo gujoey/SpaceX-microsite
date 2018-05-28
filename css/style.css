@@ -87,16 +87,30 @@ a.nav-link{
 
 
 
-/*----font-colors----*/
+/*----colors----*/
 .font-color{
 	color: #1CA2F7;
 }
 
+.red{
+	color: red;
+}
 
 
-/*----container----*/
-.container-small{
+
+/*----containers----*/
+.container-md{
 	width: 70%;
+	margin: auto;
+}
+
+.container-sm{
+	width: 50%;
+	margin: auto;
+}
+
+.container-xs{
+	width: 30%;
 	margin: auto;
 }
 
@@ -109,5 +123,25 @@ a.nav-link{
 }
 
 
+/*----buttons----*/
+.btn-primary{
+	width: 100%;
+	background-color: transparent;
+	border: 3px solid white;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+	background-color: white;
+	border: 3px solid black;
+	color: black;
+}
 
 
+/*----google-maps----*/
+#map{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 40.25%;
+    padding-top: 30px;
+    position: relative;
+}
