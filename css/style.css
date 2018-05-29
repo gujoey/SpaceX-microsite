@@ -64,7 +64,6 @@ a.nav-link{
   transform: rotate(-45deg);
 }
 
-
 /*----sections----*/
 .section{
 	text-align: center;
@@ -96,7 +95,16 @@ a.nav-link{
 	color: red;
 }
 
+/*----font-sizes----*/
+.launch-font{
+	font-size: 1.5em;
+}
 
+.font-size-2em{
+	font-size: 2em;
+	display: inline-block;
+	margin-bottom: 0;
+}
 
 /*----containers----*/
 .container-md{
@@ -105,7 +113,7 @@ a.nav-link{
 }
 
 .container-sm{
-	width: 50%;
+	width: 45%;
 	margin: auto;
 }
 
@@ -117,9 +125,10 @@ a.nav-link{
 
 /*----borders----*/
 .border{
-	border: 2px solid blue;
-	height: 100px;
-	padding: 2em;
+	border: 4px solid blue;
+	max-height: 100%;
+	overflow: hidden;
+	margin-bottom: 15px;
 }
 
 
@@ -144,4 +153,69 @@ a.nav-link{
     padding-bottom: 40.25%;
     padding-top: 30px;
     position: relative;
+}
+
+
+/*----misc----*/
+.box{
+	height: 100px;
+	width: 100px;
+	padding: 0.9em 0 1em 0;
+	background-color: #1CA2F7;
+	float: left;
+}
+
+.box-2{
+	width: 80%;
+	margin: auto;
+}
+
+.box-3{
+	width: 300px;
+}
+
+.info-expanded{
+	display: none;
+	width: 70%;
+	margin: 1em auto 1em auto;
+}
+
+/*----plus-to-x----*/
+.button {
+ 	position: relative;
+  	width: 30px;
+  	height: 30px;
+	display: inline-block;
+	float: right;
+	margin: 2em;
+}
+
+.button:before, .button:after {
+	content: "";
+	position: absolute;
+	background-color: white;
+	transition: transform 0.25s ease-out;
+}
+
+.button:before {
+	top: 0;
+	left: 50%;
+	width: 4px;
+	height: 100%;
+	margin-left: -2px;
+}
+.button:after {
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	margin-top: -2px;
+}
+.button:hover {
+	cursor: pointer;
+}
+
+.button.rotate:before, .button.rotate:after{
+	transform: rotate(45deg);
+	transition-duration: 0.2s;
 }

@@ -13,6 +13,16 @@ $(document).ready(function() {
 	});
 });
 
+//rotate plus to x and display none / block on launch dates content
+$(document).on('click','.button', function(e){
+   e.preventDefault();
+	$(this).toggleClass("rotate")
+   	$(this).next('.info-expanded').toggle(400);
+});
+
+
+
+
 
 //initialize google maps js API
 /*
