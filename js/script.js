@@ -9,20 +9,19 @@ $(document).ready(function() {
 	$('#fullpage').fullpage({
 		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'lastPage'],
 		menu: '#myMenu',
-		navigation: true
+		navigation: true,
+		scrollOverflow: true
 	});
 });
 
 //rotate plus to x and display none / block on launch dates content
 $(document).on('click','.button', function(e){
    e.preventDefault();
-	$(this).toggleClass("rotate")
+	$(this).toggleClass("rotate");
    	$(this).next('.info-expanded').toggle(400);
 });
 
-
-
-
+//slim scroll
 
 //initialize google maps js API
 /*
