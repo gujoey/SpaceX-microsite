@@ -9,7 +9,7 @@ $(document).ready(function() {
 	$('#fullpage').fullpage({
 		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'lastPage'],
 		menu: '#myMenu',
-		navigation: true,
+		//navigation: true,
 		scrollOverflow: true
 	});
 });
@@ -20,6 +20,7 @@ $(document).on('click','.button', function(e){
 	$(this).toggleClass("rotate");
    	$(this).next('.info-expanded').toggle(400);
 });
+
 
 //slim scroll
 

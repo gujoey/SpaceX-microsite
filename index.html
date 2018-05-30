@@ -53,27 +53,16 @@
 		<main>
 			<div id="fullpage">
 				<div id="home" class="section">
-					<div class="container-fluid">
+					<div class="container-xs">
 						<div class="row">
 							<div class="col-md-12">
 								<h1 class="font-color">LET'S DO SPACE EXPLORATION</h1>
+								<p class="font-size-1p5em">
+									Space is a <strong>BIG</strong> place. You can actually fit 1 million earths inside our sun and our sun is actually small compared to some of stars out there.<br><br>
+								</p>								
 							</div><!--column-->
 						</div><!--row-->
 					</div><!--container-->
-
-					<div class="container-md">
-						<div class="row">
-							<div class="col-md-4 border">
-									<p class="font-color">SPACEX</p>
-							</div><!--column-->
-							<div class="col-md-4 border">
-								<p class="font-color">LAUNCH DATES</p>
-							</div><!--column-->
-							<div class="col-md-4 border">
-								<p class="font-color">INTERNATIONAL SPACE STATION</p>
-							</div><!--column-->
-						</div><!--row-->
-					</div><!--container-md-->
 				</div><!--section-->
 
 				<div id="spacex" class="section">
@@ -82,8 +71,32 @@
 							<div class="col-md-12">
 								<div class="slide">
 									<h1 class="font-color">SPACEX</h1>
+									<div class="container-xs">
+										<p class="font-size-1p5em">
+											Space Exploration Technology Company is an American aerospace manufacturer and space transportation provider <br><br>
+											The company was founded in 2002 by Elon Musk. His goal is to provide affordable space transportation costs and enabeling the colonization of Mars.
+										</p>
+									</div><!--container-md-->
+								</div><!--slide-->
+							</div><!--column-->
+						</div><!--row-->
+						
+						<div class="row">
+							<div class="col-md-12">
+								<div class="slide">
+									<div class="container-xs">
+										<h1 class="font-color">ELON MUSKS DREAM</h1>
+										<p class="font-size-1p5em">
+											Elon Musks goal is to enable the colonisation of mars. How can he afford to realize his dream you ask? <br><br> 
+											Just build an innovative rocket that can ship other companies gods to space. Use the money you earn to build bigger rockets and before you know it you've colonized Mars. <br><br>
+											SpaceX has reasently successfully launced their Falcon Heavy rocket. Its payload was nothing less than Elon Musks own Tesla Roadster.
+										</p>
+										<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#falconHeavyLaunch">
+										  	WATCH FALCON HEAVY LAUNCH
+										</button>
+									</div><!--container-xs-->
 									<div class="container-md">
-										<div class="embed-responsive embed-responsive-16by9">
+										<!--<div class="embed-responsive embed-responsive-16by9">
 											<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Tk338VXcb24" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 										</div><!--iframe-embed-resposive-->
 									</div><!--container-md-->
@@ -164,6 +177,14 @@
 				<div id="iss" class="section">
 					<div class="container-fluid">
 						<div class="row">
+							<div class="col-md-12">
+								<div class="slide">
+									<div class="container-sm">
+										<h1 class="font-color">ISS</h1>
+										<img class="img-fluid" src="images/graphics/iss-2.png" alt="International Space Station">
+									</div><!--container-xs-->
+								</div><!--slide-->
+							</div><!--column-->
 							<div class="col-md-12">
 								<div class="slide">
 									<div class="container-xs">
@@ -256,6 +277,24 @@
 			</div><!--fullPage-container-->
 		</main>
 		
+		<div class="modal fade" id="falconHeavyLaunch" tabindex="-1" role="dialog" aria-labelledby="fhTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title font-size-1p5em" id="fhTitle">Falcon Heavy Launch</h1>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Tk338VXcb24" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div><!--iframe-embed-resposive-->
+					</div>
+				</div>
+			</div>
+		</div>
+		
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
@@ -267,6 +306,7 @@
 		
 		<!--<script type="text/javascript" async defer src="https://www.google.com/maps/api/js?key=[API-KEY]&callback=initMap"></script>-->
 		
+		<!--
 		<ul id="myMenu">
 			<li data-menuanchor="firstPage" class="active"><a href="#home">First section</a></li>
 			<li data-menuanchor="secondPage"><a href="#spacex">SpaceX</a></li>
@@ -275,7 +315,7 @@
 			<li data-menuanchor="fifthPage"><a href="#about">About</a></li>
 			<li data-menuanchor="lastPage"><a href="#contact">Contact</a></li>
 		</ul>
-		
+		-->
 		<!--
 		<div id="fp-nav" class="right" style="margin-top: -43.5px;">
 			<ul id="myMenu">
