@@ -9,7 +9,7 @@ $(document).ready(function() {
 	$('#fullpage').fullpage({
 		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'lastPage'],
 		menu: '#myMenu',
-		//navigation: true,
+		navigation: true,
 		scrollOverflow: true,
 		slidesNavigation: true
 	});

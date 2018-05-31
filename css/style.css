@@ -74,6 +74,9 @@ a.nav-link{
 	color: white;
 }
 
+div#fp-nav.right{
+	display: none;
+}
 /*
 .img-section-1{
 	background-image: url(../images/spaceman.jpg);
