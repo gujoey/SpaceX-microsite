@@ -10,7 +10,8 @@ $(document).ready(function() {
 		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'lastPage'],
 		menu: '#myMenu',
 		//navigation: true,
-		scrollOverflow: true
+		scrollOverflow: true,
+		slidesNavigation: true
 	});
 });
 

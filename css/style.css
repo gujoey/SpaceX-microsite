@@ -3,7 +3,7 @@ body{
 }
 
 
-/*----navbar----*/
+/*----navigation----*/
 .navbar{
 	background-color: transparent !important;
 	color: black;
@@ -19,14 +19,14 @@ body{
 }
 
 ul.navbar-nav{
-	margin: 1.5em 0 0 0.6em;
+	margin: 1.8em 0 0 0.6em;
 }
 
 a.nav-link{
 	background-color: #1CA2F7;
-	border-radius: 10px;
 	width: 150px;
 	margin: 0.2em;
+	padding: 1em;
 	text-align: center; 
 }
 
@@ -62,6 +62,10 @@ a.nav-link{
 }
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+	background-color: white;
 }
 
 /*----sections----*/
@@ -225,7 +229,9 @@ a.nav-link{
 	transition-duration: 0.2s;
 }
 
-
+ol{
+	display: inline-block;
+}
 /*
 #iss,
 #section1,
