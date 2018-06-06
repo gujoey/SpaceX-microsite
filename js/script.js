@@ -9,7 +9,7 @@ $(document).ready(function() {
 	$('#fullpage').fullpage({
 		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'lastPage'],
 		menu: '#myMenu',
-		navigation: true,
+		navigation: false,
 		scrollOverflow: true,
 		slidesNavigation: true
 	});
@@ -163,6 +163,40 @@ function bigFalconRocketInfo(result){
 	
 	console.log(result);
 }
+
+
+//Inline validation contactform
+function validateInput(){
+	let regExEmail, email, emailErr, message, messageErr;
+	
+	//check for valid input value in email field
+	regExEmail = /^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,4}$/;
+	email = document.getElementById("email");
+	emailErr = document.getElementById("emailError");
+	
+	if (!regExEmail.test(email.value)){
+		email.style.borderColor = "red";
+		emailErr.style.display = "block";
+		return false;
+	}else{
+		email.style.borderColor = "green";
+		emailErr.style.display = "none";
+	}
+	
+	//check for valid input in comment field
+	message = document.getElementById("message");
+	messageErr = document.getElementById("messageError");
+	
+	if (message.value === "" || message.value === undefined){
+		message.style.borderColor = "red";
+		messageErr.style.display = "block";
+		return false;
+	}else{
+		message.style.borderColor = "green";
+		messageErr.style.display = "none";
+	}
+}
+
 
 //initialize google maps js API
 /*

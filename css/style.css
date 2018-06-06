@@ -235,6 +235,14 @@ div#fp-nav.right{
 ol{
 	display: inline-block;
 }
+
+/*----inline-validation----*/
+.inlineValidation{
+	display: none;
+	color: red;
+}
+
+
 /*
 #iss,
 #section1,

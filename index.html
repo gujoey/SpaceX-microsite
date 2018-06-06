@@ -25,6 +25,8 @@
 					<!--<span class="navbar-toggler-icon"></span>-->
 					<a id="nav-toggle" href="#"><span></span></a>
 				</button>
+				
+				
 				<div class="navbar-collapse collapse" id="collapsedNavbar">
 					<ul class="navbar-nav">
 						<li class="nav-item active">
@@ -187,13 +189,12 @@
 								<div class="col-md-12">
 									<div class="border">
 										<div class="box">
-											<p class="launch-font">JUNE 6 <br> 2018</p>
+											<p class="launch-font">JUNE 11 <br> 2018</p>
 										</div>
-										<p class="font-size-2em">Space craft: Soyuz <br> Payload: ISS crew</p>
+										<p class="font-size-2em">Space craft: H-2A <br> Payload: Satelite</p>
 										<div class="button"></div>
 										<p class="info-expanded">
-											On June 6 the russian goverment will be launching the Souyuz space craft. The payload is an Explorer crew that is going to stay in the ISS for 6 months.<br><br> 
-											This space craft had an original launch date in april 2018, but the launch was delayed
+											On june 11 a Japanese H-2A rocket will lauch a satelite on behalf of the Japanese government. The satelite will be used for information gathering and radar reconnaissance.
 										</p>
 									</div><!--border-->
 								</div><!--col-->
@@ -208,13 +209,12 @@
 								<div class="col-md-12">
 									<div class="border">
 										<div class="box">
-											<p class="launch-font">JUNE 6 <br> 2018</p>
+											<p class="launch-font">JUNE 14 <br> 2018</p>
 										</div>
-										<p class="font-size-2em">Space craft: Soyuz <br> Payload: ISS crew</p>
+										<p class="font-size-2em">Space craft: Pegasus XL <br> Payload: Satelite</p>
 										<div class="button"></div>
 										<p class="info-expanded">
-											On June 6 the russian goverment will be launching the Souyuz space craft. The payload is an Explorer crew that is going to stay in the ISS for 6 months.<br><br> 
-											This space craft had an original launch date in april 2018, but the launch was delayed
+											On june 14 NASA's ICON (Ionospheric Connection Explorer) satelite will be launched into earths upper atmoshphere. The earths upper atmosphere is where terrestrial weather meets space weather and this is what the satelite will be exploring.
 										</p>
 									</div><!--border-->
 								</div><!--col-->
@@ -229,13 +229,12 @@
 								<div class="col-md-12">
 									<div class="border">
 										<div class="box">
-											<p class="launch-font">JUNE 6 <br> 2018</p>
+											<p class="launch-font">JUNE 17 <br> 2018</p>
 										</div>
-										<p class="font-size-2em">Space craft: Soyuz <br> Payload: ISS crew</p>
+										<p class="font-size-2em">Space craft: Soyuz <br> Payload: Satelite</p>
 										<div class="button"></div>
 										<p class="info-expanded">
-											On June 6 the russian goverment will be launching the Souyuz space craft. The payload is an Explorer crew that is going to stay in the ISS for 6 months.<br><br> 
-											This space craft had an original launch date in april 2018, but the launch was delayed
+											On June 17 the Russian Government will be launching a Glonass M Navigation Satelite. The satelite is a radio based navigation system
 										</p>
 									</div><!--border-->
 								</div><!--col-->
@@ -250,7 +249,7 @@
 								<div class="col-md-12">
 									<div class="border">
 										<div class="box">
-											<p class="launch-font">JUNE 6 <br> 2018</p>
+											<p class="launch-font">JUNE 22/23 <br> 2018</p>
 										</div>
 										<p class="font-size-2em">Space craft: Soyuz <br> Payload: ISS crew</p>
 										<div class="button"></div>
@@ -401,14 +400,16 @@
 						<div class="row">
 							<div class="col-md-12">
 								<h1 class="font-color">Contact</h1>
-								<form method="post">
+								<form method="post" onSubmit="return validateInput()">
 									<div class="form-group">
 										<label for="email" class="float-left">E-mail address <span class="red">*</span></label>
 										<input type="email" class="form-control form-control-lg" id="email" aria-describedby="email" placeholder="Enter email">
+										<span id="emailError" class="inlineValidation">Please fill out this field</span>
 									</div><!--formgroup-->
 									<div class="form-group">
 										<label for="message" class="float-left">Message <span class="red">*</span></label>
 										<textarea class="form-control form-control-lg" id="message" rows="6" placeholder="Fill in your message"></textarea>
+										<span id="messageError" class="inlineValidation">Please fill out this field</span>
 									</div><!--formgroup-->
 									<button type="submit" class="btn btn-primary btn-lg float-left">SEND MESSAGE</button>
 								</form>
