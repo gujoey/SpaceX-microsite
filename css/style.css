@@ -4,6 +4,10 @@ body{
 
 
 /*----navigation----*/
+div#collapsedNavbar{
+	width: 150px;
+}
+
 .navbar{
 	background-color: transparent !important;
 	color: black;
@@ -25,10 +29,12 @@ ul.navbar-nav{
 a.nav-link{
 	background-color: #1CA2F7;
 	width: 150px;
-	margin: 0.2em;
+	margin: 0.2em 0 0.2em 0;
 	padding: 1em;
 	text-align: center; 
+	border: 4px solid white;
 }
+
 
 #nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
@@ -66,6 +72,10 @@ a.nav-link{
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span{
 	background-color: white;
+}
+
+.underlined{
+	text-decoration: underline;
 }
 
 /*----sections----*/
@@ -140,6 +150,7 @@ div#fp-nav.right{
 	max-height: 100%;
 	overflow: hidden;
 	margin-bottom: 15px;
+	background-color: rgba(0,0,0,0.5);
 }
 
 
@@ -240,4 +251,36 @@ ol{
 .inlineValidation{
 	display: none;
 	color: red;
+}
+
+
+/*----images----*/
+#home{
+	background-image: url(../images/photos/galaxy.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#spacex{
+	background-image: url(../images/photos/galaxy.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#launch{
+	background-image: url(../images/photos/galaxy.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#iss{
+	background-image: url(../images/photos/galaxy.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#contact{
+	background-image: url(../images/photos/galaxy.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 }

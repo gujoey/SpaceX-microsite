@@ -17,12 +17,14 @@ $(document).ready(function() {
 	});
 });
 
+
 //rotate plus to x and display none / block on launch dates content
 $(document).on('click','.button', function(e){
    	e.preventDefault();
 	$(this).toggleClass("rotate");
    	$(this).next('.info-expanded').toggle(400);
 });
+
 
 //dynamicly set active navigation based on changing url
 $(window).on('hashchange', function(e){
@@ -65,8 +67,9 @@ $(window).on('hashchange', function(e){
 
 function setActive(active){
 	$('li.nav-item.active').attr('class', 'nav-item');
-	$(active).attr('class', 'nav-item active')
+	$(active).attr('class', 'nav-item active underlined')
 }
+
 
 //Fetch rocket data from API
 document.getElementById("fhInfoButton").addEventListener("click", function(){
@@ -77,6 +80,7 @@ document.getElementById("fhInfoButton").addEventListener("click", function(){
 		})
 		.catch(err => console.log(err))
 });
+
 
 //falcon heavy API > DOM
 function falconHeavyInfo(result){
@@ -141,6 +145,7 @@ function falconHeavyInfo(result){
 	
 	console.log(result);
 }
+
 
 //fetch rocket data from API
 document.getElementById("bfrInfoButton").addEventListener("click", function(){
