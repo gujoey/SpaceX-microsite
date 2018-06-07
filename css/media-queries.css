@@ -69,7 +69,7 @@
 	}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
 	a.nav-link{
 		width: 100%;
 	}
