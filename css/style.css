@@ -162,7 +162,7 @@ div#fp-nav.right{
 #map{
     height: 0;
     overflow: hidden;
-    padding-bottom: 40.25%;
+    padding-bottom: 60%;
     padding-top: 30px;
     position: relative;
 }
@@ -241,19 +241,3 @@ ol{
 	display: none;
 	color: red;
 }
-
-
-/*
-#iss,
-#section1,
-#section2,
-#section3{
-    background-size: cover;
-}
-
-
-#iss{
-    background-image: url(../images/graphics/galaxy.gif);
-    
-}
-*/

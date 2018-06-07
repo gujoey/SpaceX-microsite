@@ -1,13 +1,15 @@
 //hamburger menu to X on click
 document.querySelector("#nav-toggle").addEventListener("click", function(){
 	this.classList.toggle("active");
+	$("#collapsedNavbar").toggle(500);
+	
 });
 
 
 //initialize fullPage.js
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'lastPage'],
+		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
 		menu: '#myMenu',
 		navigation: false,
 		scrollOverflow: true,
@@ -17,11 +19,54 @@ $(document).ready(function() {
 
 //rotate plus to x and display none / block on launch dates content
 $(document).on('click','.button', function(e){
-   e.preventDefault();
+   	e.preventDefault();
 	$(this).toggleClass("rotate");
    	$(this).next('.info-expanded').toggle(400);
 });
 
+//dynamicly set active navigation based on changing url
+$(window).on('hashchange', function(e){
+	let url, id, regEx;
+
+	regEx = /^\w+\/\d{1}$/
+	url = window.location.href;
+	id = url.substring(url.lastIndexOf('#') + 1);
+
+	if (regEx.test(id)){
+		let newId = id.slice(0, -2);
+		if (newId === "secondPage"){
+			setActive('#pageTwo');
+		}
+		if (newId === "thirdPage"){
+			setActive('#pageThree');
+		}
+		if (newId === "fourthPage"){
+			setActive('#pageFour');
+		}
+
+	}else{
+		if (id === "firstPage"){
+			setActive('#pageOne');
+		}
+		if (id === "secondPage"){
+			setActive('#pageTwo');
+		}
+		if (id === "thirdPage"){
+			setActive('#pageThree');
+		}
+		if (id === "fourthPage"){
+			setActive('#pageFour');
+		}
+		if (id === "lastPage"){
+			setActive('#pageFive');
+		}
+	}
+});
+
+function setActive(active){
+	$('li.nav-item.active').attr('class', 'nav-item');
+	$(active).attr('class', 'nav-item active')
+}
 
 //Fetch rocket data from API
 document.getElementById("fhInfoButton").addEventListener("click", function(){
@@ -176,10 +221,12 @@ function validateInput(){
 	
 	if (!regExEmail.test(email.value)){
 		email.style.borderColor = "red";
+		email.style.borderWidth = "3px";
 		emailErr.style.display = "block";
 		return false;
 	}else{
 		email.style.borderColor = "green";
+		email.style.borderWidth = "3px";
 		emailErr.style.display = "none";
 	}
 	
@@ -189,21 +236,34 @@ function validateInput(){
 	
 	if (message.value === "" || message.value === undefined){
 		message.style.borderColor = "red";
+		message.style.borderWidth = "3px";
 		messageErr.style.display = "block";
 		return false;
 	}else{
 		message.style.borderColor = "green";
+		message.style.borderWidth = "3px";
 		messageErr.style.display = "none";
 	}
 }
 
-
-//initialize google maps js API
-/*
+//fetch data from ISS location api
 function initMap(){
+	fetch('http://api.open-notify.org/iss-now.json')
+		.then(result => result.json())
+		.then((res) => {
+			map(res);
+		})
+		.catch(err => console.log(err))
+}
+
+//initialize google maps js API with ISS location data
+function map(result){
+	let issLat = result.iss_position.latitude;
+	let issLong = result.iss_position.longitude;
+	
 	let location = {
-		lat: -28.037,
-		lng: -147.354
+		lat: parseInt(issLat),
+		lng: parseInt(issLong)
 	};
 
 	let map = new google.maps.Map(document.getElementById("map"), {
@@ -213,9 +273,8 @@ function initMap(){
 
 	let marker = new google.maps.Marker({
 		position: location,
-		icon: 'iss.png',
+		icon: 'iss-2.png',
 		map: map,
 		title: 'International Space Station (ISS)'
 	});
 }
-*/

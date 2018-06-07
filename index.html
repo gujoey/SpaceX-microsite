@@ -20,32 +20,26 @@
 	<body>
 		<header>
 			<nav class="navbar fixed-top navbar-dark bg-primary">
-				<!--<a class="navbar-brand" href="#">Navbar</a>-->
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsedNavbar">
-					<!--<span class="navbar-toggler-icon"></span>-->
-					<a id="nav-toggle" href="#"><span></span></a>
+				<button class="navbar-toggler" type="button" data-target="#collapsedNavbar">
+					<span id="nav-toggle"><span></span></span>
 				</button>
-				
 				
 				<div class="navbar-collapse collapse" id="collapsedNavbar">
 					<ul class="navbar-nav">
-						<li class="nav-item active">
-							<a class="nav-link" href="#home">HOME</a>
+						<li id="pageOne" class="nav-item active">
+							<a class="nav-link" href="#firstPage">HOME</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#spacex">SPACEX</a>
+						<li id="pageTwo" class="nav-item">
+							<a class="nav-link" href="#secondPage">SPACEX</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#launch">LAUNCH DATES</a>
+						<li id="pageThree" class="nav-item">
+							<a class="nav-link" href="#thirdPage">LAUNCH DATES</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#iss">ISS</a>
+						<li id="pageFour" class="nav-item">
+							<a class="nav-link" href="#fourthPage">ISS</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#about">ABOUT</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#contact">CONTACT</a>
+						<li id="pageFive" class="nav-item">
+							<a class="nav-link" href="#lastPage">CONTACT</a>
 						</li>
 					</ul>
 				</div><!--navbar-collapse-->
@@ -99,7 +93,7 @@
 											4. Colonize Mars
 										</p>
 										<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#getUsToMars">
-										  	Watch how SpaceX will get us to Mars
+										  	Watch SpaceX's Mars plan
 										</button>
 									</div><!--container-xs-->
 								</div><!--slide-->
@@ -115,10 +109,10 @@
 											SpaceX has reasently successfully launced their Falcon Heavy rocket. Its payload was nothing less than Elon Musks own Tesla Roadster.
 										</p>
 										<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#falconHeavyLaunch">
-										  	WATCH FALCON HEAVY LAUNCH
+										  	Watch Falcon Heavy Launch
 										</button>
 										<button id="fhInfoButton" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#falconHeavyInfo">
-										  	FALCON HEAVY ROCKET DATA
+										  	Falcon Heavy Info
 										</button>
 									</div><!--container-xs-->
 								</div><!--slide-->
@@ -134,10 +128,10 @@
 											Big Falcon Rocket is Elon Musks next masterpiece. It was announced i september 2017, and the development of the prototype started in march 2018. Testing will begin in early 2019.
 										</p>
 										<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#bigFalconRocketVideo">
-										  	WATCH BIG FALCON ROCKET ANIMATION
+										  	Watch animation of Big Falcon 
 										</button>
 										<button id="bfrInfoButton" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#bigFalconInfo">
-										  	FALCON HEAVY ROCKET DATA
+										  	Big Falcon Rocket info
 										</button>
 									</div><!--container-xs-->
 								</div><!--slide-->
@@ -174,32 +168,12 @@
 										<p class="font-size-2em">Space craft: Soyuz <br> Payload: ISS crew</p>
 										<div class="button"></div>
 										<p class="info-expanded">
-											On June 6 the russian goverment will be launching the Souyuz space craft. The payload is an Explorer crew that is going to stay in the ISS for 6 months.<br><br> 
-											This space craft had an original launch date in april 2018, but the launch was delayed
+											On June 6 the russian goverment will be launching the Souyuz space craft. The payload is an Explorer crew that is going to stay in the ISS for 6 months, the capsule will also provide as an escape pod for the current residents.
 										</p>
 									</div><!--border-->
 								</div><!--col-->
 							</div><!--row-->
-						</div><!--container-xs-->
-					</div><!--slide-->
-					<div class="slide">
-						<div class="container-sm">
-							<h1 class="font-color">LAUNCH DATES</h1>
-							<div class="row">
-								<div class="col-md-12">
-									<div class="border">
-										<div class="box">
-											<p class="launch-font">JUNE 11 <br> 2018</p>
-										</div>
-										<p class="font-size-2em">Space craft: H-2A <br> Payload: Satelite</p>
-										<div class="button"></div>
-										<p class="info-expanded">
-											On june 11 a Japanese H-2A rocket will lauch a satelite on behalf of the Japanese government. The satelite will be used for information gathering and radar reconnaissance.
-										</p>
-									</div><!--border-->
-								</div><!--col-->
-							</div><!--row-->
-						</div><!--container-xs-->
+						</div><!--container-sm-->
 					</div><!--slide-->
 					
 					<div class="slide">
@@ -219,8 +193,9 @@
 									</div><!--border-->
 								</div><!--col-->
 							</div><!--row-->
-						</div><!--container-xs-->
+						</div><!--container-sm-->
 					</div><!--slide-->
+					
 					
 					<div class="slide">
 						<div class="container-sm">
@@ -229,17 +204,17 @@
 								<div class="col-md-12">
 									<div class="border">
 										<div class="box">
-											<p class="launch-font">JUNE 17 <br> 2018</p>
+											<p class="launch-font">JUNE 29 <br> 2018</p>
 										</div>
-										<p class="font-size-2em">Space craft: Soyuz <br> Payload: Satelite</p>
+										<p class="font-size-2em">Space craft: Falcon 9 <br> Payload: Cargo to ISS</p>
 										<div class="button"></div>
 										<p class="info-expanded">
-											On June 17 the Russian Government will be launching a Glonass M Navigation Satelite. The satelite is a radio based navigation system
+											On June 29 SpaceX will launch its Falcon 9 rocket. The payload is a cargo delivery for the ISS. The mission will be unmanned.
 										</p>
 									</div><!--border-->
 								</div><!--col-->
 							</div><!--row-->
-						</div><!--container-xs-->
+						</div><!--container-sm-->
 					</div><!--slide-->
 					
 					<div class="slide">
@@ -249,18 +224,18 @@
 								<div class="col-md-12">
 									<div class="border">
 										<div class="box">
-											<p class="launch-font">JUNE 22/23 <br> 2018</p>
+											<p class="launch-font">July 31 <br> 2018</p>
 										</div>
-										<p class="font-size-2em">Space craft: Soyuz <br> Payload: ISS crew</p>
+										<p class="font-size-2em">Space craft: Delta 4-Heavy <br> Payload: Solar Probe</p>
 										<div class="button"></div>
 										<p class="info-expanded">
-											On June 6 the russian goverment will be launching the Souyuz space craft. The payload is an Explorer crew that is going to stay in the ISS for 6 months.<br><br> 
-											This space craft had an original launch date in april 2018, but the launch was delayed
+											On july 31 United Launch Alliance will launch a Delta 4-Heavy rocket. Its mission will be to "touch" the sun. The probe will be aproximately 4 million miles from the suns surface. <br><br>
+											You can read more about the project <a target="_blank" href="https://spaceflight101.com/events/delta-iv-heavy-parker-solar-probe/">here</a>.
 										</p>
 									</div><!--border-->
 								</div><!--col-->
 							</div><!--row-->
-						</div><!--container-xs-->
+						</div><!--container-sm-->
 					</div><!--slide-->
 					
 					<div class="slide">
@@ -270,18 +245,17 @@
 								<div class="col-md-12">
 									<div class="border">
 										<div class="box">
-											<p class="launch-font">JUNE 6 <br> 2018</p>
+											<p class="launch-font">August <br> 2018</p>
 										</div>
-										<p class="font-size-2em">Space craft: Soyuz <br> Payload: ISS crew</p>
+										<p class="font-size-2em">Space craft: Falcon 9 <br> Payload: ISS crew demo</p>
 										<div class="button"></div>
 										<p class="info-expanded">
-											On June 6 the russian goverment will be launching the Souyuz space craft. The payload is an Explorer crew that is going to stay in the ISS for 6 months.<br><br> 
-											This space craft had an original launch date in april 2018, but the launch was delayed
+											Sometime in august, SpaceX will launch its Crew Dragon spacecraft. This mission will be unmanned and is meant to show to NASA that SpaceX has the capability to the crews to the ISS safely.
 										</p>
 									</div><!--border-->
 								</div><!--col-->
 							</div><!--row-->
-						</div><!--container-xs-->
+						</div><!--container-sm-->
 					</div><!--slide-->
 					
 					<div class="slide">
@@ -291,18 +265,17 @@
 								<div class="col-md-12">
 									<div class="border">
 										<div class="box">
-											<p class="launch-font">JUNE 6 <br> 2018</p>
+											<p class="launch-font">Aug. 16 <br> 2018</p>
 										</div>
-										<p class="font-size-2em">Space craft: Soyuz <br> Payload: ISS crew</p>
+										<p class="font-size-2em">Space craft: H-2B <br> Payload: ISS cargo</p>
 										<div class="button"></div>
 										<p class="info-expanded">
-											On June 6 the russian goverment will be launching the Souyuz space craft. The payload is an Explorer crew that is going to stay in the ISS for 6 months.<br><br> 
-											This space craft had an original launch date in april 2018, but the launch was delayed
+											On august 16 the japanese government will launch its H-2B space craft to deliver supplies to the ISS. The spacecraft is unmanned.
 										</p>
 									</div><!--border-->
 								</div><!--col-->
 							</div><!--row-->
-						</div><!--container-xs-->
+						</div><!--container-sm-->
 					</div><!--slide-->
 					
 					<div class="slide">
@@ -312,15 +285,67 @@
 								<div class="col-md-12">
 									<div class="border">
 										<div class="box">
-											<p class="launch-font">JUNE 6 <br> 2018</p>
+											<p class="launch-font">Aug. 27 <br> 2018</p>
+										</div>
+										<p class="font-size-2em">Space craft: Atlas 5 <br> Payload: ISS crew demo</p>
+										<div class="button"></div>
+										<p class="info-expanded">
+											On august 27 United Launch Alliance will launch the Atlas 5 rocket with Boeing's CST-100 Starliner space craft. This mission will be unmanned and is meant to show to NASA that SpaceX has the capability to the crews to the ISS safely.
+										</p>
+									</div><!--border-->
+								</div><!--col-->
+							</div><!--row-->
+						</div><!--container-sm-->
+					</div><!--slide-->
+					
+					<div class="slide">
+						<div class="container-sm">
+							<h1 class="font-color">LAUNCH DATES</h1>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="border">
+										<div class="box">
+											<p class="launch-font">Oct. 11 <br> 2018</p>
 										</div>
 										<p class="font-size-2em">Space craft: Soyuz <br> Payload: ISS crew</p>
 										<div class="button"></div>
 										<p class="info-expanded">
-											On June 6 the russian goverment will be launching the Souyuz space craft. The payload is an Explorer crew that is going to stay in the ISS for 6 months.<br><br> 
-											This space craft had an original launch date in april 2018, but the launch was delayed
+											On october 11 the russian goverment will be launching the Souyuz space craft. The payload is an Explorer crew that is going to stay in the ISS for 6 months, the capsule will also provide as an escape pod for the current residents. 
 										</p>
 									</div><!--border-->
+								</div><!--col-->
+							</div><!--row-->
+						</div><!--container-sm-->
+					</div><!--slide-->
+					
+					<div class="slide">
+						<div class="container-sm">
+							<h1 class="font-color">LAUNCH DATES</h1>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="border">
+										<div class="box">
+											<p class="launch-font"> 2019</p>
+										</div>
+										<p class="font-size-2em">Space craft: Long March 5 <br> Payload: Chang'e 5</p>
+										<div class="button"></div>
+										<p class="info-expanded">
+											Sometime in 2019 the chinese space craft Long March 5. The mission will be to collect samples from the moon. This is the first time this is atempted since 1976.
+										</p>
+									</div><!--border-->
+								</div><!--col-->
+							</div><!--row-->
+						</div><!--container-sm-->
+					</div><!--slide-->
+					
+					<div class="slide">
+						<div class="container-xs">
+							<h1 class="font-color">LAUNCH DATES</h1>
+							<div class="row">
+								<div class="col-md-12">
+									<p class="font-size-1p5em">
+										If you want a complete list of all space craft launches, then you can find it <a target="_blank" href="https://spaceflightnow.com/launch-schedule/">here</a>.
+									</p>
 								</div><!--col-->
 							</div><!--row-->
 						</div><!--container-xs-->
@@ -332,67 +357,37 @@
 						<div class="row">
 							<div class="col-md-12">
 								<div class="slide">
+									<div class="container-xs">
+										<h1 class="font-color">INTERNATIONAL SPACE STATION</h1>
+										<p class="font-size-1p5em">
+											The ISS is an inhabited satelite that is orbiting earth in low earth orbit (2.000 km).<br>
+											ISS uses aproximately 92.49 minutes to orbit the earth since it's traveling at a speed of aproximately 28.000 km/h. This results in the ISS orbiting the earth 15.5 times times per day!
+										</p>
+									</div><!--container-xs-->
+								</div><!--slide-->
+							</div><!--column-->
+							
+							The ISS is an inhabited satelite that is orbiting earth in low earth orbit (2.000 km).<br>
+											ISS uses aproximately 92.49 minutes to orbit the earth since it's traveling at a speed of aproximately 28.000 km/h. This results in the ISS orbiting the earth 15.5 times times per day!
+							<div class="col-md-12">
+								<div class="slide">
+									<div class="container-xs">
+										<h1 class="font-color">ISS LIVE POSITION</h1>
+										<div id="map"></div>
+									</div><!--container-xs-->
+								</div><!--slide-->
+							</div><!--column-->
+							
+							<div class="col-md-12">
+								<div class="slide">
 									<div class="container-sm">
 										<h1 class="font-color">ISS</h1>
 										<img class="img-fluid" src="images/graphics/iss-2.png" alt="International Space Station">
 									</div><!--container-xs-->
 								</div><!--slide-->
 							</div><!--column-->
-							<div class="col-md-12">
-								<div class="slide">
-									<div class="container-xs">
-										<h1 class="font-color">ISS</h1>
-										<div id="map"></div>
-									</div><!--container-xs-->
-								</div><!--slide-->
-							</div><!--column-->
-							<div class="col-md-12">
-								<div class="slide">
-									<div class="container-xs">
-										<h1 class="font-color">Heading</h1>
-										<p>
-											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.<br><br>
-											Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.<br><br>
-											Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.<br><br>
-											Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.<br><br>
-											Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.<br><br>
-										</p>
-									</div><!--container-xs-->
-								</div><!--slide-->
-							</div><!--column-->
-							<div class="col-md-12">
-								<div class="slide">
-									<div class="container-xs">
-										<h1 class="font-color">Heading</h1>
-										<p>
-											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.<br><br>
-											Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.<br><br>
-											Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.<br><br>
-											Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.<br><br>
-											Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.<br><br>
-										</p>
-									</div><!--container-xs-->
-								</div><!--slide-->
-							</div><!--column-->
 						</div><!--row-->
 					</div><!--container-fluid-->
-				</div><!--section-->
-
-				<div id="about" class="section">
-					<div class="container-xs">
-						<div class="row">
-							<div class="col-md-12">
-								<h1 class="font-color">About this site</h1>
-								<p>
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.<br><br>
-									Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.<br><br>
-									Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.<br><br>
-									Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.<br><br>
-									Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.<br><br>
-								</p>
-							</div><!--column-->
-						</div><!--row-->
-					</div><!--container-xs-->
 				</div><!--section-->
 
 				<div id="contact" class="section">
@@ -417,14 +412,6 @@
 						</div><!--row-->
 					</div><!--container-xs-->
 				</div><!--section-->
-				<ul id="myMenu">
-					<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
-					<li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-					<li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
-					<li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
-					<li data-menuanchor="fifthPage"><a href="#fifthPage">Fifth section</a></li>
-					<li data-menuanchor="lastPage"><a href="#lastPage">Last section</a></li>
-				</ul>
 			</div><!--fullPage-container-->
 		</main>
 		
@@ -535,9 +522,8 @@
 		<script src="js/scrolloverflow.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
 		
+		<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAplVVoPI_LH31R2OFkTopFONs5EBxOrvg&callback&callback=initMap" async defer></script>-->
 		<script src="js/script.js"></script>
-		
-		<!--<script type="text/javascript" async defer src="https://www.google.com/maps/api/js?key=[API-KEY]&callback=initMap"></script>-->
 		
 		
 	</body>
