@@ -1,10 +1,3 @@
-//hamburger menu to X on click
-document.querySelector("#nav-toggle").addEventListener("click", function(){
-	this.classList.toggle("active");
-	$("#collapsedNavbar").toggle(500);
-	
-});
-
 
 //initialize fullPage.js
 $(document).ready(function() {
@@ -15,6 +8,13 @@ $(document).ready(function() {
 		scrollOverflow: true,
 		slidesNavigation: true
 	});
+});
+
+//hamburger menu to X on click
+document.querySelector("#nav-toggle").addEventListener("click", function(){
+	this.classList.toggle("active");
+	$("#collapsedNavbar").toggle(500);
+	
 });
 
 
