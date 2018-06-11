@@ -19,8 +19,17 @@
 	
 	<body>
 		<header>
+			
 			<nav class="navbar fixed-top navbar-dark bg-primary">
-				<span id="nav-toggle"><span></span></span>
+				
+				
+				<!--<span id="nav-toggle"><span></span></span>-->
+				
+				<div id="nav-toggle" class="container-hamburger">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
 				
 				<div class="navbar-collapse collapse" id="collapsedNavbar">
 					<ul class="navbar-nav">
@@ -142,9 +151,9 @@
 									<div class="container-xs">
 										<h1 class="font-color">LEARN MORE ABOUT SPACEX</h1>
 										<p class="font-size-1p5em">
-											If you want to learn more about SpaceX, you can find more info about the company on <a href="http://www.spacex.com/">spacex.com</a><br><br>
+											If you want to learn more about SpaceX, you can find more info about the company on <a class="link" href="http://www.spacex.com/">spacex.com</a><br><br>
 											
-											You can also find some fantastic photos of SpaceX's rockets and rocket launches on their <a href="https://www.flickr.com/photos/spacex">Flickr Account</a>
+											You can also find some fantastic photos of SpaceX's rockets and rocket launches on their <a class="link" href="https://www.flickr.com/photos/spacex">Flickr Account</a>
 										</p>
 									</div><!--container-xs-->
 								</div><!--slide-->
@@ -228,7 +237,7 @@
 										<div class="button"></div>
 										<p class="info-expanded">
 											On july 31 United Launch Alliance will launch a Delta 4-Heavy rocket. Its mission will be to "touch" the sun. The probe will be aproximately 4 million miles from the suns surface. <br><br>
-											You can read more about the project <a target="_blank" href="https://spaceflight101.com/events/delta-iv-heavy-parker-solar-probe/">here</a>.
+											You can read more about the project <a class="link" target="_blank" href="https://spaceflight101.com/events/delta-iv-heavy-parker-solar-probe/">here</a>.
 										</p>
 									</div><!--border-->
 								</div><!--col-->
@@ -323,7 +332,7 @@
 								<div class="col-md-12">
 									<div class="border">
 										<div class="box">
-											<p class="launch-font"> 2019</p>
+											<p class="launch-font">TBA <br> 2019</p>
 										</div>
 										<p class="font-size-2em">Space craft: Long March 5 <br> Payload: Chang'e 5</p>
 										<div class="button"></div>
@@ -342,7 +351,7 @@
 							<div class="row">
 								<div class="col-md-12">
 									<p class="font-size-1p5em">
-										If you want a complete list of all space craft launches, then you can find it <a target="_blank" href="https://spaceflightnow.com/launch-schedule/">here</a>.
+										You can find a complete list of all space craft launches <a class="link" target="_blank" href="https://spaceflightnow.com/launch-schedule/">here</a>.
 									</p>
 								</div><!--col-->
 							</div><!--row-->
@@ -368,7 +377,7 @@
 							<div class="col-md-12">
 								<div class="slide">
 									<div class="container-xs">
-										<h1 class="font-color">ISS LIVE POSITION</h1>
+										<h1 class="font-color">ISS's CURRENT POSITION OVER EARTH</h1>
 										<div id="map"></div>
 									</div><!--container-xs-->
 								</div><!--slide-->
@@ -376,12 +385,15 @@
 							
 							<div class="col-md-12">
 								<div class="slide">
-									<div class="container-sm">
-										<h1 class="font-color">ISS</h1>
-										<!--<img class="img-fluid" src="images/graphics/iss-2.png" alt="International Space Station">-->
+									<div class="container-xs">
+										<h1 class="font-color">LIVING IN THE ISS</h1>
 										<p class="font-size-1p5em">
-										
+											Is it the roof? The floor? the wall? Due to the zero gravity environment, everything is relative in the International Space Station.<br><br>
+											Watch the video by clicking the button below to see what it is like to live in the ISS.
 										</p>
+										<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#liveInISS">
+										  	The life on the ISS
+										</button>
 									</div><!--container-xs-->
 								</div><!--slide-->
 							</div><!--column-->
@@ -393,7 +405,7 @@
 					<div class="container-xs">
 						<div class="row">
 							<div class="col-md-12">
-								<h1 class="font-color">Contact</h1>
+								<h1 class="font-color">CONTACT</h1>
 								<form method="post" onSubmit="return validateInput()">
 									<div class="form-group">
 										<label for="email" class="float-left">E-mail address <span class="red">*</span></label>
@@ -425,7 +437,7 @@
 					</div>
 					<div class="modal-body">
 						<div class="embed-responsive embed-responsive-16by9">
-							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A0FZIwabctw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A0FZIwabctw" allowfullscreen></iframe>
 						</div><!--iframe-embed-resposive-->
 					</div>
 				</div>
@@ -443,7 +455,7 @@
 					</div>
 					<div class="modal-body">
 						<div class="embed-responsive embed-responsive-16by9">
-							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/txLmVpdWtNc?start=70" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/txLmVpdWtNc?start=70" allowfullscreen></iframe>
 						</div><!--iframe-embed-resposive-->
 					</div>
 				</div>
@@ -461,7 +473,7 @@
 					</div>
 					<div class="modal-body">
 						<div class="embed-responsive embed-responsive-16by9">
-							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iSv63RaZeuo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iSv63RaZeuo" allowfullscreen></iframe>
 						</div><!--iframe-embed-resposive-->
 					</div>
 				</div>
@@ -507,7 +519,25 @@
 					</div>
 					<div class="modal-body text-center">
 						<div class="embed-responsive embed-responsive-16by9">
-							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0qo78R_yYFA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0qo78R_yYFA" allowfullscreen></iframe>
+						</div><!--iframe-embed-resposive-->
+					</div>
+				</div>
+			</div>
+		</div><!--modal-Big-Falcon-video-->
+		
+		<div class="modal fade" id="liveInISS" tabindex="-1" role="dialog" aria-labelledby="bfrVideo" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title font-size-1p5em" id="liveInISSVideo">How its like to live in the ISS</h1>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body text-center">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SGP6Y0Pnhe4" allowfullscreen></iframe>
 						</div><!--iframe-embed-resposive-->
 					</div>
 				</div>

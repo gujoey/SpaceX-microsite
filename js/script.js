@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 //hamburger menu to X on click
 document.querySelector("#nav-toggle").addEventListener("click", function(){
-	this.classList.toggle("active");
+	this.classList.toggle("change");
 	$("#collapsedNavbar").toggle(500);
 	
 });

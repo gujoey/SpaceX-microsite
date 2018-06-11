@@ -23,7 +23,7 @@ div#collapsedNavbar{
 }
 
 ul.navbar-nav{
-	margin: 1.8em 0 0 0.6em;
+	margin: 0 0 0 0.6em;
 }
 
 a.nav-link{
@@ -36,40 +36,30 @@ a.nav-link{
 }
 
 
-#nav-toggle { cursor: pointer; 
-	padding: 2em 1em 0em 1em; 
-}
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 5px;
-  width: 35px;
-  background: #1CA2F7;
-  position: absolute;
-  display: block;
-  content: '';
-}
-#nav-toggle span:before {
-  top: -10px; 
-}
-#nav-toggle span:after {
-  bottom: -10px;
+.container-hamburger {
+    display: inline-block;
+    cursor: pointer;
+	margin: 0.5em 0 0 0.5em;
 }
 
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  transition: all 500ms ease-in-out;
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #1CA2F7;
+    margin: 6px 0;
+    transition: 0.4s;
 }
-#nav-toggle.active span {
-  background-color: transparent;
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
 }
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-  top: 0;
-}
-#nav-toggle.active span:before {
-  transform: rotate(45deg);
-}
-#nav-toggle.active span:after {
-  transform: rotate(-45deg);
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-9px, -7px);
+    transform: rotate(45deg) translate(-9px, -7px);
 }
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span{
@@ -78,6 +68,15 @@ a.nav-link{
 
 .underlined{
 	text-decoration: underline;
+}
+
+.link{
+	color: white;
+	text-decoration: underline;
+}
+
+.link:hover{
+	color:lightgray;
 }
 
 /*----sections----*/
@@ -89,21 +88,6 @@ a.nav-link{
 div#fp-nav.right{
 	display: none;
 }
-/*
-.img-section-1{
-	background-image: url(../images/spaceman.jpg);
-	background-repeat: no-repeat;
-	height: 100%;
-	width: 100%;
-}
-
-.bg-color{
-	background-color: rgba(0,0,0,0.6);
-	height: 100%;
-}*/
-
-
-
 
 /*----colors----*/
 .font-color{
