@@ -257,7 +257,7 @@ function validateInput(){
 
 //fetch data from ISS location api
 function initMap(){
-	fetch('http://api.open-notify.org/iss-now.json')
+	fetch('https://api.wheretheiss.at/v1/satellites/25544')
 		.then(result => result.json())
 		.then((res) => {
 			map(res);
@@ -267,8 +267,8 @@ function initMap(){
 
 //initialize google maps js API with ISS location data
 function map(result){
-	let issLat = result.iss_position.latitude;
-	let issLong = result.iss_position.longitude;
+	let issLat = result.latitude;
+	let issLong = result.longitude;
 	
 	let location = {
 		lat: parseInt(issLat),
