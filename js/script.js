@@ -1,6 +1,5 @@
-
-//initialize fullPage.js
 $(document).ready(function() {
+	//initialize fullPage.js
 	$('#fullpage').fullpage({
 		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
 		menu: '#myMenu',
@@ -8,6 +7,13 @@ $(document).ready(function() {
 		scrollOverflow: true,
 		slidesNavigation: true
 	});
+	
+	//check for cookie from posting form
+	if(document.cookie==="formSubmitted=true"){
+		let now = new Date();
+		$("#confirmation").modal();
+		document.cookie = "formSubmitted=; expires=" + now + "path=/";
+	}
 });
 
 //hamburger menu to X on click
@@ -142,8 +148,6 @@ function falconHeavyInfo(result){
 	pSuccessRate = document.createElement("p");
 	pSuccessRate.appendChild(successRate);
 	modalBody.appendChild(pSuccessRate);
-	
-	console.log(result);
 }
 
 
@@ -210,8 +214,6 @@ function bigFalconRocketInfo(result){
 	pPayloadMars = document.createElement("p");
 	pPayloadMars.appendChild(payloadMars);
 	modalBody.appendChild(pPayloadMars);
-	
-	console.log(result);
 }
 
 
@@ -249,6 +251,8 @@ function validateInput(){
 		message.style.borderWidth = "3px";
 		messageErr.style.display = "none";
 	}
+	
+	document.cookie = "formSubmitted=true; path=/;";
 }
 
 //fetch data from ISS location api
