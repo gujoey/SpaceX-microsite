@@ -1,1 +1,3 @@
-Noroff front end develeopment project exam, spring semester 2018 
+# Mock micro site for spacex
+
+Live site: https://gujoey.github.io/SpaceX-microsite/
